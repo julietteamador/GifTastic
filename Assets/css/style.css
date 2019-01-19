@@ -1,0 +1,25 @@
+h1{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:whitesmoke;
+    font-size: 65px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+body{
+    background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+}
+
+.button{
+    background-color:whitesmoke;
+    color: navy;
+    padding: 10px 20px;
+    text-align: center;
+    border: #13547a;
+    
+}
+
+#gifs-appear-here{
+    padding-top: 2%;
+}

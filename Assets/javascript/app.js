@@ -1,9 +1,12 @@
+var shows = ["Big Little Lies", "Sharp Objects", "Game of Thrones", "Westworld", "True Detective"];
+
+
 $('.button').on('click', function (event) {
   event.preventDefault()
   var currentElement = $(this);
   var hboShow = $(this).attr("data-show");
   var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + hboShow
-    + "&api_key=NErysb7HE9FZPTretbtJV2G2GQ7IwTtH";
+    + "&api_key=NErysb7HE9FZPTretbtJV2G2GQ7IwTtH&limit=10";
   console.log(queryURL);
 
   $.ajax({
@@ -47,3 +50,28 @@ $(document).on('click', '.gif', function(){
       $(this).attr('isStill', 'true')
     }
 })
+
+$(document).on("click", "#add-show", function (event) {
+  event.preventDefault();
+
+  // get the showname from input box call that var showName
+
+  var showName = $('#show-input').val();
+
+  // create a new button
+var newButton = $('<button>');
+
+console.log(newButton);
+
+
+  // set the data-show to the showName .attr('data-show')
+
+
+// add the button class to the new button .addClass('button') so that it calls your onClick method
+
+  // make the button text the showName .text()
+
+  // target your show buttons div and append the new butto to that div .append()
+
+
+});

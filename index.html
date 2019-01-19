@@ -17,15 +17,17 @@
 
 <body>
   <div class="container">
-    <h1>Add Show</h1>
+    <h1>HBO Shows</h1>
     <form class="example" action="action_page.php">
-      <input type="text" placeholder="Search.." name="search">
-      <button type="submit">submit<i class="fa fa-search"></i></button>
+      <div id="showButtons">
+      <input id="show-input" type="text" placeholder="Add Show.." name="search">
+      <button id="add-show" class="btn btn-secondary" type="submit">Add Show</button>
       <button class="button" data-show="Big Little Lies">Big Little Lies</button>
       <button class="button" data-show="Sharp Objects">Sharp Objects</button>
       <button class="button" data-show="Game of Thrones">Game of Thrones</button>
       <button class="button" data-show="Westworld">Westworld</button>
       <button class="button" data-show="True Detective">True Detective</button>
+      </div>
       <div id="gifs-appear-here">
       </div>
     </form>
