@@ -23,3 +23,12 @@ body{
 #gifs-appear-here{
     padding-top: 2%;
 }
+
+.showButtons{
+    background-color:whitesmoke;
+    color: navy;
+    padding: 10px 20px;
+    text-align: center;
+    border: #13547a;
+    
+}

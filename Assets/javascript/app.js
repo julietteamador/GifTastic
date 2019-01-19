@@ -1,7 +1,7 @@
 var shows = ["Big Little Lies", "Sharp Objects", "Game of Thrones", "Westworld", "True Detective"];
 
 
-$('.button').on('click', function (event) {
+$(document).on('click', '.button', function (event) {
   event.preventDefault()
   var currentElement = $(this);
   var hboShow = $(this).attr("data-show");
@@ -65,14 +65,14 @@ $(document).on("click", "#add-show", function (event) {
 
 
   // set the data-show to the showName .attr('data-show')
-  $(showName).attr('data-show');  
- 
+  newButton.attr('data-show', showName);
+
 
   // add the button class to the new button .addClass('button') so that it calls your onClick method
-
+  newButton.addClass('button');
 
   // make the button text the showName .text()
-
+  newButton.text(showName);
   // target your show buttons div and append the new butto to that div .append()
   $("#showButtons").append(newButton);
 
